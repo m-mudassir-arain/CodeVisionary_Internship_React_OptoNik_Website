@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CodeVisionary_Internship_React_OptoNik_Website/static/css/main.312a766f.css",
-    "main.js": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.0f60f84f.js",
+    "main.js": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.b85792cf.js",
     "static/media/bg-image.jpg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/bg-image.06c8570bbfcca1d9f9a1.jpg",
     "static/media/products-page.jpg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/products-page.3e0c5588a657d0e411ff.jpg",
     "static/media/about-page-bg.jpg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/about-page-bg.12258a7ec07657f05b80.jpg",
@@ -38,10 +38,10 @@
     "static/media/brand-1.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/brand-1.182ed63623fd0226e56f.png",
     "index.html": "/CodeVisionary_Internship_React_OptoNik_Website/index.html",
     "main.312a766f.css.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/css/main.312a766f.css.map",
-    "main.0f60f84f.js.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.0f60f84f.js.map"
+    "main.b85792cf.js.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.b85792cf.js.map"
   },
   "entrypoints": [
     "static/css/main.312a766f.css",
-    "static/js/main.0f60f84f.js"
+    "static/js/main.b85792cf.js"
   ]
 }
