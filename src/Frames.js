@@ -14,11 +14,7 @@ import ProductImage13 from './assets/item-13.png'
 import ProductImage14 from './assets/item-14.png'
 
 import glassimg1 from './assets/sun-glass-2.png'
-import cate_1 from './assets/mens.png'
-import cate_2 from './assets/womens.jpeg'
-import glassimg3 from './assets/sun-glass-3.png'
 
-import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -32,15 +28,6 @@ import brand5 from './assets/brand-5.png'
 
 
 const Frames = () => {
-
-  const navigate = useNavigate();
-
-    const menCategory = () => {
-        navigate('/products', { state: { category: 'men' } });
-    };
-    const womenCategory = () => {
-        navigate('/products', { state: { category: 'women' } });
-    };
 
     const [swiperRef, setSwiperRef] = useState(null);
 
@@ -112,39 +99,6 @@ const Frames = () => {
 
                 <div id='imageDiv' className='flex justify-center items-center'>
                     <img id='mainImage' src={glassimg1}  alt='eyetesting-image'></img>
-                </div>
-            </div>
-      </section>
-
-      {/* -----------------Category section */}
-      <section id='Categories' className='flex justify-center items-center text-white'>
-            <div id='cate-section' className='overflow-hidden'>
-                <div id='cate1' className='border-r-4 border-blue-400 flex justify-evenly items-center bg-black w-1/3'>
-                    <div id='c-image-div'>
-                    <img src={cate_1} alt='eyetesting-image' className='w-62 h-72'></img>
-                    </div>
-                    <div className='p-5 flex flex-col justify-center items-center'>
-                        <h1 className='font-bold text-5xl mb-5 text-center'>For Men</h1>
-                        <button id='cate-btn' onClick={menCategory}>VIEW MORE</button>
-                    </div>
-                </div>
-                <div id='cate2' className='flex justify-evenly items-center bg-black w-1/3 border-r-4 border-blue-400'>
-                    <div id='c-image-div'>
-                        <img src={cate_2} alt='eyetesting-image' className='w-62 h-72'></img>
-                    </div>
-                    <div className='p-5 flex flex-col justify-center items-center'>
-                        <h1 className='font-bold text-5xl mb-5 text-center'>For Womens</h1>
-                        <button id='cate-btn' onClick={womenCategory}>VIEW MORE</button>
-                    </div>        
-                </div>
-                <div id='cate3' className='flex justify-evenly items-center bg-black h-72 w-1/3'>
-                    <div className='flex justify-center items-center'>
-                        <img src={glassimg3} alt='eyetesting-image' className='w-62'></img>
-                    </div>
-                    <div className='p-5 flex flex-col justify-center items-center'>
-                        <h1 className='font-bold text-5xl mb-5 text-center'>Don't miss the sale.</h1>
-                        <button id='cate-btn'>VIEW MORE</button>
-                    </div>
                 </div>
             </div>
       </section>
@@ -237,9 +191,9 @@ const Frames = () => {
         <h1 id='Product-heading' className='text-5xl font-bold'>Frames List</h1>
 
         <div className='relative'>
-          <button onClick={() => setSelectedCategory('all')} className={`filter-btn w-28 h-8 m-2 ${selectedCategory === 'all' ? 'active' : ''}`}>All</button>
-          <button onClick={() => setSelectedCategory('men')} className={`filter-btn w-28 h-8 m-2 ${selectedCategory === 'men' ? 'active' : ''}`}>Men</button>
-          <button onClick={() => setSelectedCategory('women')} className={`filter-btn w-28 h-8 m-2 ${selectedCategory === 'women' ? 'active' : ''}`}>Women</button>
+          <button onClick={() => setSelectedCategory('all')} className={`filter-btn w-36 h-10 m-2 ${selectedCategory === 'all' ? 'active' : ''}`}>All</button>
+          <button onClick={() => setSelectedCategory('men')} className={`filter-btn w-36 h-10 m-2 ${selectedCategory === 'men' ? 'active' : ''}`}>Men</button>
+          <button onClick={() => setSelectedCategory('women')} className={`filter-btn w-36 h-10 m-2 ${selectedCategory === 'women' ? 'active' : ''}`}>Women</button>
         </div>
 
         <div id='products-section' className='flex justify-evenly items-center flex-wrap '>

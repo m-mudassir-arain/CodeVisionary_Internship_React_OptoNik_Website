@@ -26,7 +26,7 @@ const Contact = () => {
                 <input type="text" name="name" value={formData.name} onChange={handleChange} className="w-full border p-2 rounded mt-1"
                   placeholder="Your name" required/>
               </div>
-
+    
               <div>
                 <label className="block text-gray-700">Email *</label>
                 <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full border p-2 rounded mt-1"

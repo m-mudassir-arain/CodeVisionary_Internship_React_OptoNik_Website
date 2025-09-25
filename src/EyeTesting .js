@@ -74,7 +74,7 @@ return (
         </section>
 
         {/* -----------------Doctors section */}
-        <section id='Doctors' className='flex justify-center items-center'>
+        <section id='Doctors' className='h-full flex justify-center items-center'>
             <div id='doctors-section' className='flex justify-evenly items-center w-4/5 '>
                 <div id='doctors-text' className='h-96 w-96 flex flex-col justify-evenly items-start'>
                     <p className='text-blue-600 text-xl font-bold'>Our Doctors</p>
@@ -192,17 +192,17 @@ return (
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label className="block font-bold">Name:</label>
-                        <input type="text" name="name" value={formData.name} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
+                        <input type="text" name="name" value={formData.name} placeholder='Enter your name' onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
                     </div>
 
                     <div>
                         <label className="block font-bold">Age:</label>
-                        <input type="number" name="age" value={formData.age} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
+                        <input type="number" name="age" value={formData.age} placeholder='Enter your age' onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
                     </div>
 
                     <div>
                         <label className="block font-bold">Phone Number:</label>
-                        <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
+                        <input type="tel" name="phoneNumber" value={formData.phoneNumber} placeholder='Enter your phone number' onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
                     </div>
 
                     <div>

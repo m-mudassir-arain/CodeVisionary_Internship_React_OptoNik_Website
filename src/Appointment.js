@@ -43,17 +43,17 @@ const handleSubmit = (e) => {
                   <form onSubmit={handleSubmit} className="space-y-4">
                       <div>
                           <label className="block font-bold">Name:</label>
-                          <input type="text" name="name" value={formData.name} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
+                          <input type="text" name="name" placeholder='Enter your name' value={formData.name} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
                       </div>
 
                       <div>
                           <label className="block font-bold">Age:</label>
-                          <input type="number" name="age" value={formData.age} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
+                          <input type="number" name="age" placeholder='Enter your age' value={formData.age} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
                       </div>
 
                       <div>
                           <label className="block font-bold">Phone Number:</label>
-                          <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
+                          <input type="tel" name="phoneNumber" placeholder='Enter your phone number' value={formData.phoneNumber} onChange={handleChange} className="border-4 rounded p-2 w-full" required/>
                       </div>
 
                       <div>

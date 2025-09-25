@@ -16,4 +16,3 @@ function DisplayIcons() {
 
 
 export default DisplayIcons
-

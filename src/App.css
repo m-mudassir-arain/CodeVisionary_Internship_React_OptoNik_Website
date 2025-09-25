@@ -82,7 +82,7 @@
 /* ------------------Frames section */
 #Frames::after{
   content: "ELEGANTE";
-  background: -webkit-linear-gradient(right,#eee 46%, #45A9A3 52%);
+  background: -webkit-linear-gradient(right,#eee 52%, #2ea1db 48%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 130px;
@@ -91,14 +91,14 @@
   color: black;
   position: absolute;
   top: 75%;
-  left: 50%;
+  left: 52%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
 #Frames{
   height: 100vh;
   margin-top: -10vh;
-  background-image: linear-gradient(to right, rgb(248, 241, 228) 50%, #45A9A3 50%);
+  background-image: linear-gradient(to right, rgb(248, 241, 228) 50%, #2ea1db 50%);
 }
 #frames-text{
   position: absolute;
@@ -121,6 +121,7 @@
   position: absolute;
   top: 33%;
   right: 35.5%;
+  left: 35.5%;
   transform: translate(0%, 0%);
   animation: glassanimate 1s  linear;
 }
@@ -143,10 +144,11 @@
   } 
 }
 #frames-btn-1, #frames-btn-2{
-  background: #45a9a3;
+  background: #2ea1db;
   width: 120px;
   height: 50px;
   color: white;
+  border: 1px solid white;
   font-weight: 600;
   transition: ease .3s;
 }
@@ -155,8 +157,8 @@
 }
 #frames-btn-1:hover, #frames-btn-2:hover{
   background: white;
-  color: #45a9a3;
-  border: 2px solid #45a9a3;
+  color: #2ea1db;
+  border: 2px solid #2ea1db;
   font-weight: bold;
 }
 #copyright-section{
@@ -169,65 +171,9 @@
   font-size: 15px;
 }
 
-/* --------------Category section */
-#Categories{
-  height: 28vh;
-}
-#cate1{
-  position: absolute;
-  top:100vh;
-  left: 0%;
-  transform: translate(0%, 0%);
-  animation: appear 9s linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-#cate2{
-  position: absolute;
-  top:100vh;
-  left: 33.3%;
-  transform: translate(0%, 0%);
-  animation: appear 9s linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-#cate3{
-  position: absolute;
-  top:100vh;
-  left: 66.6%;
-  transform: translate(0%, 0%);
-  animation: appear 9s linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-@keyframes appear{
-  from{
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-}
-#cate-btn{
-  background: #45a9a3;
-  width: 120px;
-  height: 40px;
-  color: white;
-  font-weight: 600;
-  transition: ease .3s;
-}
-#cate-btn:hover{
-  background: white;
-  color: #45a9a3;
-  border: 2px solid #45a9a3;
-  font-weight: bold;
-}
-
 /* ------------top products */
 #top-products{
-  background-image: linear-gradient(to right,  #45a9a3,white);
+  background-image: linear-gradient(to right,  #2ea1db,white);
 }
 #product1{
   background-image:linear-gradient(to bottom,rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.57)), url(./assets/product-1.jpeg);
@@ -276,7 +222,7 @@
   display: none;
 }
 .product-btn{
-  background: #45a9a3;
+  background: #2ea1db;
   width: 200px;
   height: 50px;
   color: white;
@@ -287,8 +233,8 @@
 }
 .product-btn:hover{
   background: white;
-  color: #45a9a3;
-  border: 2px solid #45a9a3;
+  color: #2ea1db;
+  border: 2px solid #2ea1db;
   font-weight: bold;
 }
 .product:hover{
@@ -317,23 +263,23 @@
   margin-top: -10vh;
 }
 #Product-List{
-  background: #45A9A3;
+  background: #2ea1db;
 }
 #Product-List .filter-btn{
-  background: #45A9A3;
+  background: #2ea1db;
   color: white;
   border: 2px solid white;
   transition: all .5s;
 }
 #Product-List .filter-btn:hover{
-  border:2px solid #45A9A3;
-  color: #45A9A3;
+  border:2px solid #2ea1db;
+  color: #2ea1db;
   background: white;
 }
 #Product-List .active{
-  border: 2px solid #45A9A3;
+  border: 2px solid #2ea1db;
   background: white;
-  color: #45A9A3;
+  color: #2ea1db;
 }
 /* ----------------Products Cards---------------------- */
 .item-card{
@@ -446,7 +392,7 @@
   border: 1.5px solid rgba(255, 255, 255, 0.18);
 }
 #about-second-section{
-  background-image: linear-gradient(to left, black 70%, #45A9A3 30%);
+  background-image: linear-gradient(to left, black 70%, #2ea1db 30%);
 }
 #about-second-section #a-s-s-options{
   position: relative;
@@ -469,898 +415,1073 @@
   border: 2px solid #45a9a231;
 }
 #Contact form input, form textarea{
-  border-color: #45A9A3;
+  border-color: #2ea1db;
 }
 
 
 
 
 /* -----------------Responcive Tags----------------- */
-@media (max-width: 1344px) {
-  #eyetesting-title{
-    font-size: 4rem;
-  }
-  #Doctors{
-    height: 70vh;
-    padding: 10px;
-  }
-  #doctors-section{
-    width: 100%;
-  }
-  #choose-section{
-    width: 100%;
+@media(max-width:1440px){
+
+  /* Eye testing page */
+  #Eyetesting{
     height: 100%;
-    padding: 15px;
-  }
-  #choose-text{
-    padding-left: 0;
-  }
-  #choose-left p{
-    font-size: 1.1rem;
-  }
-  #services-section{
-    width: 100%;
-  }
-  .tre-card{
-    width: 45%;
-  }
-  #f-Link{
-    width: 30%;
-  }
-  #f-Link h1{
-    width: 50%;
-  }
-  #f-Link ul{
-    flex-direction: column;
-    align-items: start;
-    width: 60%;
-  }
-  #Frames::after{
-    font-size: 6rem;
-    top: 83%;
-    letter-spacing: 2.5rem;
-  }
-  #imageDiv{
-    top: 50%;
-    left: 36%;
-  }
-  #mainImage{
-    width: 100%;
-  }
-  #Categories{
-    height: 36vh;
-  }
-  #swipdiv{
-    width: 100%;
-  }
-  .product{
-    width: 100%;
-  }
-  .a-s-s-heading{
-    left: 0;
-  }
-  #a-s-s-options p{
-    font-size: 1.2rem;
-  }
-  #a-s-s-options p span{
-    font-size: 1.4rem;
-  }
-  #promise-div{
-    width: 100%;
-    height: 100%;
-    border-radius: 0%;
-  }
-  #c-details{
-    width: 50%;
-  }
-}
-@media (max-width: 840px) {
-  #eyetesting-section{
-    flex-direction: column;
-  }
-  #left-section{
-    width: 100%;
-  }
-  #right-section{
-    width: 100%;
-  }
-  #right-section div{
-    width: 100%;
-  }
-  #right-section div img{
-    width: 13rem;
+
+    #eyetesting-section{
+      padding: 2rem;
+      #left-section{
+        
+        height: 35rem;
+        justify-content: center;
+        gap: 2rem;
+        #eyetesting-title{
+          font-size: 3rem;
+        }
+      }
+      #right-section{
+        img{
+          width: 90%;
+        }
+      }
+    }
   }
   #Doctors{
     height: 100%;
-  }
-  #doctors-section{
-    flex-direction: column;
-    width: 100%;
-  }
-  #doctors-text{
-    width: 90%;
-  }
-  #doctor-pic{
-    margin: 1rem;
-    width: 90%;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    border-top-left-radius: 6rem;
-    border-top-right-radius: 6rem;
-  }
+    #doctors-section{
+      width: 80%;
+      padding: 1rem;
+
+      #doctors-text{
+        width: 40%;
+      }
+
+      #doctor-pic{
+        border-radius: 2rem;
+        height: 18rem;
+        width: 20rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+          
+        img{
+            height: 100%;
+        }
+      }
+    }
+  }  
   #chooseus{
     height: 100%;
+  
+
+    #choose-section{
+      width: 100%;
+      padding-bottom: 1rem;
+      #choose-text{
+        padding: 1.5rem;
+        height: 8rem;
+        text-align: center;
+        
+        h2{
+          font-size: 1.5rem;
+        }
+        #choose-heading{
+          font-size: 2.5rem;
+        }
+      }
+      
+    }
+
+    #sub-sections{
+      width: 80%;
+      #choose-left{
+
+        div{
+          height: 8rem;
+          h1{
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
   }
-  #choose-section{
-    padding: 2rem;
+  #services{
+    height: 100%;
+    #services-section{
+      width: 90%;
+    }
+    #services-text{
+      width: 100%;
+      align-items: start;
+      height: 10rem;
+
+      h1{
+        font-size: 2.6rem;
+      }
+    }
+    #sub-services{
+      .tre-card{
+        #treatment-text{
+          width: 100%;
+          height: 85%;
+          top: 70%;
+
+          h1{
+            font-size: 1.6rem;
+            text-align: center;
+          }
+        } 
+        #treatment-text:hover{
+          top: 0;
+        }
+      }
+      #tre-card-contact{
+        align-items: center;
+        padding: 1rem;
+        
+          h1{
+            font-weight: 500;
+            text-align: center;
+          }
+        }
+    }
   }
-  #choose-text{
-    padding: 10px;
+  #Appointment-form{
+    height: 100%;
+
+    .container{
+      width: 90%;
+      padding: 0;
+      margin-bottom: 1rem;
+
+      h1{
+        font-size: 2.5rem;
+      }
+    }
   }
-  #sub-sections{
-    flex-direction: column;
-  }
-  #choose-left{
-    width: 100%;
-  }
-  #choose-right{
-    width: 96%;
-  }
-  #services-text h1{
-    text-align: center;
-  }
-  .tre-card{
-    width: 80%;
-  }
-  #f-contact{
-    width: 50%;
-  }
-  #f-Link{
-    display: none;
-  }
-  #f-socialmedia{
-    width: 50%;
-  }
+  /* frames page */
   #Frames::after{
-    font-size: 4rem;
-    top: 70%;
+    content: "ELEGANTE";
+    background: -webkit-linear-gradient(right,#eee 52%, #2ea1db 48%);
+    background-clip: text;
+    letter-spacing: 35px;
+    left: 52%;
   }
   #Frames{
-    align-items: center;
-    height: 80vh;
-  }
-  #frames-title{
-    width: 70%;
-  }
-  #imageDiv{
-    top: 50%;
-  }
-  #Categories{
-    height: 31vh;
-  }
-  #cate1, #cate2{
-    top: 80vh;
-    width: 50%;
-  }
-  #cate2{
-    left: 50%;
-  }
-  #cate3{
-    display: none;
-  }
-  .product{
-    width: 200px;
-    height: 300px;
-  }
-  #p-name{
-    font-size: 1.4rem;
-  }
-  .product-btn{
-    width: 150px;
-  }
-  #about-second-section{
-    background-image: linear-gradient(to right, black 100%, #45a9a3);
-    height: 100%;
-  }
-  #about-second-section #a-s-s-options{
-    width: 100%;
-    left: 0%;
-    padding: 15px;
-  }
-  #Contact{
-    flex-direction: column-reverse;
-    height: 140vh;
-    justify-content: center;
-  }
-  #c-form{
-    width: 100%;
-    margin: 1rem;
-  }
-  #c-details{
-    width: 90%;
-    margin: 1rem;
-  }
-  .sub-section{
-    flex-direction: row;
-  }
-}
-@media (max-width: 430px) {
-  #eyetesting-section{
-    padding-top: 20vh;
-  }
-  #left-section{
-    height: 100%;
-    margin-bottom: 2rem;
-  }
-  #eyetesting-subtitle{
-    font-size: 1rem;
-  }
-  #eyetesting-title{
-    font-size: 1.2rem;
-  }
-  #eyetesting-para{
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-  }
-  #eyetesting-btn{
-    font-size: 1rem;
-    width: 150px;
-  }
-  #choose-heading{
-    font-size: 2rem;
-  }
-  #choose-section{
-    padding: 8px;
-  }
-  #choose-left div{
-    width: 95%;
-    height: 200px;
-  }
-  #choose-left div h1{
-    font-size: 1.3rem;
-  }
-  #choose-left div p{
-    font-size: 1rem;
-  }
-  #choose-right{
-    width: 95%;
-  }
-  #services-text h1{
-    font-size: 2rem;
-  }
-  #tre-card{
-    width: 90%;
-    height: 200px;
-  }
-  #treatment-text{
-    width: 100%;
-    height: 100%;
-    top: 78%;
-  }
-  #treatment-text h1{
-    font-size: 1.4rem;
-  }
-  .container h1{
-    font-size: 2rem;
-  }
-  #f-c-l-s{
-    flex-direction: column;
-    align-items: start;
-  }
-  #f-contact{
-    width: 90%;
-  }
-  #f-socialmedia{
-    width: 90%;
-    align-items: start;
-    margin-bottom: 1rem;
-  }
-  #f-socialmedia h1{
-    margin-bottom: 15px;
-  }
-  #copyright-section{
-    padding: 2rem 0;
-  }
-  #copyright-section p{
-    font-size: .8rem;
-  }
-  #Frames::after{
-    display: none;
-  }
-  #Frames{
-    background-image: linear-gradient(to right, #45A9A3 100%, white);
-  }
-  #frames-title{
-    font-size: 2rem;
-    width: 90%;
-  }
-  #frames-para{
-    font-size: 1.2rem;
-    color: white;
-  }
-  #frames-btn-1, #frames-btn-2{
-    background: white;
-    color: #45A9A3;
-  }
-  #frames-btn-1:hover, #frames-btn-2:hover{
-    background: #45A9A3;
-    color: white;
-    border-color: white;
-  }
-  #imageDiv{
-    width: 200px;
-    left: 20%;
-  }
-  #c-image-div{
-    display: none;
-  }
-  #cate1,#cate2{
-    height: 31vh;
-  }
-  #cate1 h1,#cate2 h1{
-    font-size: 2rem;
+
+    #frames-section{
+      align-items: end;
+      #frames-title{
+        width: 100%;
+      }
+      #imageDiv{
+        top: 45%;
+        right: 36%;
+        left: 36%;
+      }
+      #mainImage{
+        width: 400px;
+      }
+    }
   }
   #top-products{
-    padding: 15px;
+      padding: 2rem 0;
+      #swipdiv{
+        width: 90%;
+      }
   }
-  .product{
-    height: 150px;
-    width: 150px;
+  #Product-List{
+    button{
+      width: 12rem;
+      height: 3rem;
+      font-size: 1.8rem;
+    }
+    #products-section{
+      #Items{
+        margin: 1rem;        
+        .item-card{
+          width: 300px;
+          .card{
+            width: 300px;
+          }
+          .sidebar{
+              width: 100px;
+          }
+        }
+      }
+    }
+    
   }
-  #p-name{
-    display: none;
-  }
-  .product-btn{
-    font-size: 1rem;
-    width: 110px;
-    height: 30px;
-  }
-  #brands-section h1{
-    font-size: 2.5rem;
-  }
-  .filter-btn{
-    width: 5rem;
-  }
-  .item-card{
-    width: 300px;
-    margin: 0;
-  }
-  .card{
-    width: 300px;
-  }
-  .sidebar{
-    width: 100px;
-  }
-  #appoint-form-section{
-    width: 100%;
-  }
-  .container h1{
-    font-size: 1.5rem;
-    padding: 0;
-  }
-  #About{
-    height: 100%;
-  }
-  #about-section{
-    width: 100%;
-    margin-top: 12vh;
-    margin-bottom: 1rem;
-  }
-  #about-section h1{
-    font-size: 2rem;
-  }
-  #about-text p {
-    font-size: 1rem;
-  }
-  #about-second-section{
-    padding: 1.5rem;
-  }
-  .a-s-s-heading h1{
-    font-size: 2.5rem;
-  }
-  #a-s-s-options{
-    width: 100%;
-  }
-  #a-s-s-options p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  #a-s-s-options p span{
-    font-size: 1.2rem;
-  }
-  #a-s-s-promise{
-    height: 100%;
-  }
-  #promise-div{
-    padding: 1rem;
-  }
-  #promise-div h1{
-    text-align: left;
-  }
-  #promise-div p{
-    width: 100%;
-  }
-  #Contact{
-    height: 100%;
-  }
+  /* Contact page */
   #c-form{
-    width: 100%;
+    width: 40%;
   }
   #c-details{
-    margin-top: 12vh;
+    width: 60%;
   }
-  .sub-section{
-    flex-direction: column;
-    width: 100%;
-  }
-  #business, #social-media{
-    margin-left: 0;
-  }
-}
 
-
-
-/* @media (max-width: 1024px) { 
-  #Navbar img{
-    width: 200px;
-  }
-  #left-section{
-    width: 50%;
-  }
-  #eyetesting-title{
-    font-size: 3.5rem;
-  }
-  #eyetesting-para{
-    font-size: 1rem;
-  }
-  .about-doctor{
-    font-size: 1rem;
-  }
-  #doctor-pic img{
-    height: 20rem;
-  }
-  #choose-left h1{
-    font-size: 1.4rem;
-  }
-  #choose-left p{
-    font-size: 1rem;
-  }
-  #treatment-text{
-    top: 73%;
-  }
-  #treatment-text h1{
-    font-size: 1.5rem;
-  }
-  #tre-card-2 #treatment-text{
-    top: 77%;
+  /* footer section */
+  #f-c-l-s{
+    #f-Link{
+      h1{
+        margin-bottom: 1rem;
+      }
+      ul{
+        a{
+          margin: 6px;
+        }
+      }
+    }
   } 
-  #tre-card-4 #treatment-text {
-    top: 69%;
-  }
-  #tre-card-5 #treatment-text {
-    top: 69%;
-  }
-  #Frames{
-    height: 60vh;
-  }
-  #Frames::after{
-    top: 45%;
-    font-size: 70px;
-    letter-spacing: 30px;
-  }
-  #frames-title{
-    font-size: 30px;
-  }
-  #frames-para{
-    font-size: 14px;
-  }
-  #imageDiv{
-    right: 32.5%;
-    top: 18%;
-  }
-  #mainImage{
-    width: 350px;
-  }
-  #frames-btn-1, #frames-btn-2{
-    font-size: 12px;
-    font-weight: 400;
-    width: 100px;
-    height: 35px;
-  }
-  #frames-btn-2{
-    width: 150px;
-  }
-  #frames-btn-2{
-    width: 120px;
-  }
-  #Categories{
-    height: 25.4vh;
-  }
-  #cate1, #cate2, #cate3{
-    height: 345px;
-    top: 60%;
-  }
-   #swipdiv{
-    width: 100%;
-  }
-  .product{
-    height: 25rem;
-    width: 25rem;
-  }
-  .product #p-name{
-    font-size: 25px;
-  }
-  #f-contact h1{
-    font-size: 20px;
-  }
-  #f-contact p{
-    font-size: 14px;
-  }
-  #f-link h1{
-    font-size: 20px;
-  }
-  #f-link ul{
-    font-size: 14px;
-  }
-  #f-link ul li a{
-    margin: 8px;
-  }
-  #f-socialmedia h1{
-    font-size: 20px;
-  }
-  #DisplayIcons a{
-    font-size: 16px;
-  }
-  #Product{
-    height: 70vh;
-  }
-  .Products-section h1{
-    left: 4rem;
-    top: -5rem;
-    font-size: 40px;
-  }
-  .Products-section ul{
-    top: -5rem;
-    left: 7rem;
-  }
-  #Appointment{
-    height: 90vh;
-  }
-  #About{
-    height: 70vh;
-  }
-  #about-section{
-    height: 50%;
-  }
-  #about-section h1{
-    font-size: 50px;
-  }
-  #about-text p{
-    font-size: 19px;
-  }
-  #about-second-section{
-    height: 60vh;
-  }
-  #a-s-s-heading h1{
-    font-size: 20px;
-  }
-  #a-s-s-options p{
-    font-size: 16px;
-  }
-  #a-s-s-options p span{
-    font-size: 22px;
-  }
-  #Contact{
-    height: 100vh;
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-  #c-form{
-    width: 100%;
-    margin: 10px;
-  }
-  #c-details{
-    width: 75%;
-    margin: 10px;
-  }
 }
 
-@media (max-width: 835px) {
-  #eyetesting-section{
-    flex-direction: column;
+
+
+
+
+
+
+@media(max-width:1024px){
+  /* Navbar section */
+  #Navbar{
+    padding: 5px;
+    margin: 0;
+
+    .container{
+      margin: 0;
+      
+      img{
+        margin-left: -3rem;
+        width: 18rem;
+      }
+      button{
+        margin-right: 2rem;
+      }
+    }
   }
-  #left-section{
-    width: 100%;
-  }
-  #right-section{
-    width: 50%;
+
+  /* Eye testing page */
+  #Eyetesting{
+    height: 100%;
+
+    #eyetesting-section{
+      padding: 2rem;
+      flex-direction: column;
+
+      #left-section{
+        width: 100%;
+        height: 33rem;
+        justify-content: center;
+        gap: 2rem;
+        #eyetesting-title{
+          font-size: 3rem;
+        }
+      }
+      #right-section{
+        width: 100%;
+        div{
+          width: 100%;
+        }
+        img{
+          width: 30%;
+        }
+      }
+    }
   }
   #Doctors{
     height: 100%;
-  }
-  #doctors-section{
-    width: 100%;
-    flex-direction: column;
-  }
-  #doctors-text{
-    width: 80%;
-  }
-  #doctors-text, #doctor-pic{
-    margin: 10px;
-  }
+
+    #doctors-section{
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+
+      #doctors-text{
+        width: 100%;
+        height: 20rem;
+        padding: 0;
+      }
+
+      #doctor-pic{
+        border-radius: 2rem;
+        height: 40rem;
+        width: 45rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+          
+        img{
+            width: 70%;
+            height: 100%;
+        }
+      }
+    }
+  }  
   #chooseus{
     height: 100%;
+
+    #choose-section{
+      width: 100%;
+
+      #choose-text{
+        padding: 1.5rem;
+        height: 8rem;
+        
+        h2{
+          font-size: 1.5rem;
+        }
+        #choose-heading{
+          font-size: 2.5rem;
+        }
+      }
+      
+    }
+
+    #sub-sections{
+      flex-direction: column;
+
+      #choose-left{
+        width: 95%;
+
+        div{
+          height: 10rem;
+
+          h1{
+            font-size: 2rem;
+            font-weight: 600;
+          }
+          p{
+            font-size: 1.3rem;
+          }
+        }
+      }
+      #choose-right{
+        width: 92%;
+        height: 42rem;
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
-  #sub-sections{
-    flex-direction: column;
+  #services{
+    height: 100%;
+    #services-section{
+      width: 90%;
+    }
+    #services-text{
+      width: 100%;
+      align-items: start;
+      height: 10rem;
+
+      h1{
+        font-size: 2.6rem;
+      }
+    }
+    #sub-services{
+      flex-direction: column;
+
+      .tre-card{
+        width: 100%;
+
+        #treatment-text{
+          width: 100%;
+          height: 85%;
+          top: 70%;
+
+          h1{
+            font-size: 1.6rem;
+            text-align: center;
+          }
+        } 
+        #treatment-text:hover{
+          top: 0;
+        }
+      }
+      #tre-card-contact{
+        align-items: center;
+        padding: 1rem;
+        
+          h1{
+            font-weight: 500;
+            text-align: center;
+          }
+        }
+    }
   }
-  #choose-left{
-    width: 100%;
+  #Appointment-form{
+    height: 100%;
+
+    .container{
+      width: 90%;
+      padding: 0;
+      margin-bottom: 1rem;
+
+      h1{
+        font-size: 2.5rem;
+      }
+    }
   }
-  #choose-right{
-    width: 95%;
-  }
-  .tre-card{
-    width: 45%;
-  }
-  #tre-card-1 #treatment-text{
-    top: 70%;
-  }
-  #tre-card-2 #treatment-text{
-    top: 74%;
-  }
-  #tre-card-4 #treatment-text{
-    top: 65%;
+
+  /* Frame page */
+  #Frames::after{
+    content: "ELEGANTE";
+    background: -webkit-linear-gradient(right,#eee 50%, #2ea1db 52%);
+    background-clip: text;
+    font-size: 50px;
+    letter-spacing: 30px;
+    top: 48%;
+    left: 52%;
   }
   #Frames{
-    height: 70vh;
-  }
-  #Frames::after{
-    top: 55%;
-  }
-  #frames-text{
-    left: 3%;
-  }
-  #frames-text h1{
-    font-size: 45px;
-  }
-  #frames-text p{
-    font-size: 20px;
-  }
-  @keyframes textanimate{
-    0%{
-      transform: translate(0%,0%);
-      left: -30%;
-    }
-    100%{
-      transform: translate(0%, 0%);
-      left: 3%;
+    height: 80vh;
+    /* margin-top: -10vh; */
+    background-image: linear-gradient(to right, rgb(248, 241, 228) 50%, #2ea1db 50%);
+
+    #frames-section{
+      align-items: end;
+      #frames-title{
+        width: 80%;
+        font-size: 3rem;
+      }
+      #imageDiv{
+        top: 53%;
+        right: 24%;
+        left: 24%;
+      }
+      #mainImage{
+        width: 400px;
+      }
     }
   }
-  #imageDiv{
-    height: 250px;
-    position: absolute;
-    top: 24%;
-    right: 0%;
-    transform: translate(0%, 0%);
-    animation: glassanimate 1s  linear;
+  #top-products{
+      padding: 2rem 0;
+      #swipdiv{
+        width: 90%;
+      }
+      .product{
+        height: 20rem;
+        width: 20rem;
+      }
   }
-  #mainImage{
-   width: 400px;
+  #Product-List{
+    button{
+      width: 12rem;
+      height: 3rem;
+      font-size: 1.8rem;
+    }
+    #products-section{
+      #Items{
+        margin: 1rem;        
+
+        .item-card{
+          width: 300px;
+
+          .card{
+            width: 300px;
+          }
+          .sidebar{
+              width: 100px;
+          }
+        }
+      }
+    }
+    
   }
-  #cate1,#cate2,#cate3, #cate1 img, #cate2 img{
-    top: 70%;
-    height: 278px;
+
+  /* appointment page */
+  #appoint-form-section{
+    width: 100%;
+
+    form {
+      label{
+        font-size: 1.5rem;
+      }
+    }
   }
-  #cate1 h1, #cate2 h1, #cate3 h1{
-    font-size: 25px;
-  }
-  #cate1 button, #cate2 button, #cate3 button{
-    font-size: 14px;
-    font-weight: 300;
-    width: 100px;
-    height: 35px;
-  }
-  .product{
-    height: 20rem;
-    width: 20rem;
-  }
-  .product #p-name{
-    font-size: 20px;
-  }
-  #Products-section h1{
-    font-size: 20px;
-  }
-  .item-card{
-    width: 300px;
-    height: 300px;
-  }
-  .card{
-    width: 300px;
-    height: 300px;
-  }
-  .sidebar .name h2{
-    font-size: 18px;
-    line-height: 1.5rem;
-  }
-  #f-contact{
-    width: 80%;
-  }
-  #f-socialmedia{
-    width: 20%;
-  }
-  #f-link{
-    display: none;
-  }
-  #Appointment{
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  #appointment-section, #vision{
-    top: 0;
-    left: 0;
-  }
-  #About{
-    height: 100vh;
-  }
+  
+  /* about page */
   #about-section{
-    height: 60%;
+    width: 100%;
+    #about-text{
+      p{
+        color: black;
+      }
+    }
   }
   #about-second-section{
-    height: 80vh;
-    background: #000;
+    background-image: linear-gradient(to left, #2ea1db 70%, #2ea1db 30%);
+
+    #a-s-s-heading, .left-40{
+        width: 100%;
+        left: 0;
+        h1{
+          color: black;
+        }
+    }
+    #a-s-s-options{
+        width: 100%;
+        left: 0;
+        p{
+          color: rgb(0, 0, 0);
+        }
+    }  
   }
-  #a-s-s-options p{
-    font-size: 16px;
+  #a-s-s-promise{
+    #promise-div{
+      width: 100%;
+      height: 100%;
+      p{
+        width: 90%;
+      }
+    }
   }
-  #about-second-section #a-s-s-options{
-    left: 8%;
-    width: 90%;
-  } 
-  #a-s-s-options p span{
-    font-size: 22px;
-  } 
+
+  /* contact page */
   #Contact{
-    height: 115vh;
+    height: 100%;
+    flex-direction: column;
+
+    #c-form{
+      width: 100%;
+      height: 90vh;
+
+      form{
+        width: 100%;
+      }
+    }
+    #c-details{
+      width: 100%;
+
+      .sub-section{
+        width: 100%;
+      }
+      #business, #social-media{
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  /* footer-section */
+  #f-c-l-s{
+    display: grid;
+    grid-template-areas: 
+    "contact  contact"
+    "links  social-icons";
+    grid-template-columns: 2fr 2fr;
+    height: 100%;
+    width: 100%;
+
+    #f-contact{
+      width: 100%;
+      grid-area: contact;
+    }
+    #f-socialmedia{
+      width: 100%;
+      align-items: center;
+      grid-area: social-icons;
+
+      button{
+        width: 100%;
+      }
+      #DisplayIcons{
+        width: 100%;
+        justify-content: space-between;
+
+        a{
+          margin: 0;
+        }
+      }
+    }
+    #f-Link{
+      width: 100%;
+      align-items: start;
+      height: 13rem;
+      grid-area: links;
+
+      h1{
+        margin-bottom: 1rem;
+      }
+
+      ul{
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        
+        a{
+          margin: 0;
+        }
+      }
+    }
+  }
+  #copyright-section{
+      padding-top: 2rem;
   }
 }
 
-@media (max-width: 428px) {
+
+
+
+
+
+@media(max-width:600px){
+  /* Navbar */
+  #Navbar{
+    padding: 5px;
+    margin: 0;
+
+    .container{
+      margin: 0;
+      
+      img{
+        margin-left: -2rem;
+        width: 14rem;
+        height: 14rem;
+      }
+      button{
+        margin-right: 2rem;
+      }
+    }
+  }
+  
+  /* EyeTesting Page */
+  #Eyetesting{
+    height: 100%;
+
+    #eyetesting-section{
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      #left-section{
+        width: 100%;
+        height: 40rem;
+        justify-content: center;
+
+        #eyetesting-title{
+          font-size: 3rem;          
+        }
+      }
+      #right-section{
+        width: 100%;
+        div{
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  #Doctors{
+    height: 100%;
+
+    #doctors-section{
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      #doctors-text{
+        width: 100%;
+        height: 23rem;
+      }
+
+      #doctor-pic{
+        border-radius: 2rem;
+        height: 25rem;
+        width: 23rem;
+        margin: 1rem;
+          
+        img{
+            width: 100%;
+        }
+      }
+    }
+  }  
+  #chooseus{
+    height: 100%;
+
+    #choose-section{
+      width: 100%;
+
+      #choose-text{
+        padding: 2rem;
+        height: 10rem;
+        
+        h2{
+          font-size: 1.3rem;
+        }
+        #choose-heading{
+          font-size: 1.8rem;
+        }
+      }
+      
+    }
+
+    #sub-sections{
+      flex-direction: column;
+
+      #choose-left{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        div{
+          height: 13rem;
+
+          h1{
+            font-size: 1.4rem;
+            font-weight: 600;
+          }
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+      #choose-right{
+        width: 82%;
+        height: 15rem;
+      }
+    }
+  }
+  #services{
+    height: 100%;
+
+    #services-text{
+      align-items: start;
+      height: 10rem;
+
+      h1{
+        font-size: 2.2rem;
+      }
+    }
+    #sub-services{
+      flex-direction: column;
+
+      .tre-card{
+        width: 100%;
+
+        #treatment-text{
+          width: 100%;
+          height: 85%;
+          top: 70%;
+
+          h1{
+            font-size: 1.6rem;
+          }
+        } 
+        #treatment-text:hover{
+          top: 0;
+        }
+      }
+      #tre-card-contact{
+        align-items: center;
+        padding: 1rem;
+        
+          h1{
+            font-weight: 500;
+            text-align: center;
+          }
+        }
+    }
+  }
+  #Appointment-form{
+    height: 100%;
+
+    .container{
+      width: 80%;
+      padding: 0;
+      margin-bottom: 1rem;
+
+      h1{
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  /* Frames Page */
+  #Frames{
+    height: 70vh;
+    background-image: linear-gradient(to right, #2ea1db 50%, #2ea1db 50%); /*#0284c7*/
+    padding: 0;
+    #frames-section{
+      align-items: center;
+
+      #frames-text{
+        #frames-title{
+          font-size: 2rem;
+          width: 100%;
+        }
+        #frames-para{
+          font-size: 1rem;
+          color: white;
+          margin: 0;
+        }
+        button{
+          width: 9rem;
+        }
+      }
+    #imageDiv{
+      top: 40%;
+      right: 20%;
+      left: 20%;
+    }
+    #mainImage{
+      width: 250px;
+    }
+    }
+    
+  }
   #Frames::after{
-    font-size: 40px;
-    letter-spacing: 10px;
-    top: 62%;
+      content: "";
   }
-  #frames-text h1{
-    font-size: 30px;
-    width: 70%;
-    margin-bottom: 10px;
+  #top-products{
+    padding: 2rem 0;
+
+    h1{
+      font-size: 2.3rem;
+    }
+    #swipdiv{
+      width: 90%;
+
+      .product{
+        height: 10rem;
+        width: 10rem;
+
+        #p-name{
+          display: none;
+        }
+        .top-price{
+          button{
+            width: 100px;
+            height: 30px;
+            font-size: 1rem;
+            background-color: #2ea1db;
+          }
+          button:hover{
+            background-color: white;
+            color: #2ea1db;
+            border: #2ea1db;
+          }
+        }
+      }
+    }
   }
-  #frames-text p{
-    font-size: 13px;
-    margin-bottom: 10px;
+  #brands{
+    h1{
+      font-size: 2.5rem;
+    }
   }
-  #imageDiv{
-    right: 26.5%;
-    top: 37%;
+  #Product-List{
+    #Product-heading{
+      font-size: 2.5rem;
+    }
+    .filter-btn{
+      width: 5rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+    #products-section{
+      #Items{
+        width: 90%;
+
+        .item-card{
+          width: 300px;
+
+          .card{
+            width: 300px;
+          }
+          .sidebar{
+              width: 100px;
+          }
+        }
+      }
+    }
+    
   }
-  #mainImage{
-    width: 200px;
+
+  /* Appoinment page */
+  #Appointment{
+    #appoint-form-section{
+      width: 100%;
+      .container{
+        padding: 0;
+      }
+      h1{
+        font-size: 2.5rem;
+      }
+      form{
+        label{
+          font-size: 1rem;
+        }
+      }
+    }
   }
-  #frames-btn-1, #frames-btn-2{
-    font-size: 10px;
-    width: 70px;
-    height: 30px;
-    margin: 8px;
-  }
-  #frames-btn-2{
-    width: 90px;
-  }
-  #Categories{
-    height: 33vh;
-  }
-  #cate1, #cate2{
-    width: 50%;
-  }
-  #cate2{
-    left: 50%;
-  }
-  #cate3{
-    display: none;
-  }
-  #cate1 h1, #cate2 h1{
-    font-size: 20px;
-  }
-  #cate1 button, #cate2 button{
-    font-size: 10px;
-    font-weight: 300;
-    width: 70px;
-    height: 30px;
-  }
-  #top-products h1{
-    font-size: 35px;
-  }
-  .product{
-    height: 10rem;
-    width: 8rem;
-  }
-  .product #p-name{
-    display: none;
-  }
-  .top-price button{
-    font-size: 10px;
-    width: 70px;
-    height: 30px;
-  }
-  #f-contact{
-    display: none;
-  }
-  #f-socialmedia{
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  #copyright-section p{
-    font-size: 10px;
-  }
-  #Product{
-    height: 100vh;
-  }
-  .Products-section h1{
-    font-size: 25px;
-    width: 300px;
-    left: 0;
-  }
-  .Products-section ul{
-    width: 200px;
-    left: 2rem;
-  }
-  .Products-section ul li{
-    font-size: 20px;
-  }
-  #Product-List button{
-    width: 80px;
-  }
+
+  /* About page */
   #About{
-    height: 140vh;
-  }
-  #about-section{
-    height: 70%;
-    width: 90%;
+    height: 100%;
+    padding: 2rem 0;
+
+    #about-section{
+      width: 90%;
+      height: 50rem;
+
+      h1{
+        font-size: 3rem;
+      }
+      #about-text{
+        width: 90%;
+        p{
+          font-size: 1rem;
+          color: black;
+        }
+      }
+    }
   }
   #about-second-section{
-    height: 150vh;
-  }
-  #about-second-section #a-s-s-heading{
-    font-size: 16px;
-    left: 0;
-  }
-  #a-s-s-options{
-    left: 0;
+      height: 100%;
+      padding: 1.5rem;
+      background-image: linear-gradient(to left, #2ea1db 50%, #2ea1db 50%);
+          
+      #a-s-s-heading, .left-40{
+        width: 100%;
+        left: 0;
+        
+        h1{
+          font-size: 2.5rem;
+          color: black;
+        }
+      }
+      #a-s-s-options{
+        width: 100%;
+        left: 0;
+
+        p{
+          color: rgb(0, 0, 0);
+          font-size: 1rem;
+          line-height: 1.2rem;
+          span{
+            font-size: 1.2rem;
+            color: black;
+          }
+        }
+      }
   }
   #a-s-s-promise{
-    height: 100vh;
+    height: 100%;
+
+    #promise-div{
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+      padding: 1.5rem;
+
+      h1{
+        font-size: 3rem;
+        width: 100%;
+      }
+      p{
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
   }
-  #a-s-s-promise #promise-div{
-    height: 90vh;
-    width: 90%;
-  }
-  #promise-div h1{
-    font-size: 50px;
-  }
+
+  /* Contact page */
   #Contact{
-    height: 205vh;
+    height: 100%;
+    flex-direction: column;
+
+    #c-form{
+      width: 100%;
+      height: 110vh;
+
+      form{
+        width: 100%;
+      }
+    }
+    #c-details{
+      width: 100%;
+
+      .sub-section{
+        width: 100%;
+      }
+      #business, #social-media{
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
   }
-  #c-details .sub-section{
-    width: 100%;
+
+  /* footer-section */
+  #f-c-l-s{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 0rem;
+
+    #f-contact{
+      width: 100%;
+      padding: 0;
+    }
+    #f-socialmedia{
+      width: 100%;
+      align-items: center;
+      padding: 0;
+
+      button{
+        width: 100%;
+      }
+      #DisplayIcons{
+        width: 100%;
+        justify-content: space-between;
+
+        a{
+          margin: 0;
+        }
+      }
+    }
+    #f-Link{
+      width: 100%;
+      align-items: start;
+      height: 13rem;
+      padding: 0;
+
+      h1{
+        margin-bottom: 1rem;
+      }
+
+      ul{
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        
+        a{
+          margin: 0;
+        }
+      }
+    }
   }
-  #c-details #business, #c-details #social-media{
-    margin-left: 0;
-    margin-top: 10px;
+  #copyright-section{
+      padding-top: 2rem;
+      padding-left: 0;
+      padding-right: 0;
   }
-} */
-@media (max-width: 1024px) {
+}
+
+  
+
+
+
+
+
+ 
+@media (max-width: 1023px) {
   #DesktopLinks{
     display: none;
   }
