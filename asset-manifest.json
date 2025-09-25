@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CodeVisionary_Internship_React_OptoNik_Website/static/css/main.312a766f.css",
-    "main.js": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.b85792cf.js",
+    "main.css": "/CodeVisionary_Internship_React_OptoNik_Website/static/css/main.0c33fce8.css",
+    "main.js": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.d05b60ae.js",
     "static/media/bg-image.jpg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/bg-image.06c8570bbfcca1d9f9a1.jpg",
     "static/media/products-page.jpg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/products-page.3e0c5588a657d0e411ff.jpg",
     "static/media/about-page-bg.jpg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/about-page-bg.12258a7ec07657f05b80.jpg",
@@ -16,7 +16,6 @@
     "static/media/item-1.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-1.415ae19f04ef6a045aa6.png",
     "static/media/eyetestong-img-4.jpeg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/eyetestong-img-4.b1552c39757d072a7096.jpeg",
     "static/media/item-5.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-5.dc3d6b4fb40b475f08cc.png",
-    "static/media/mens.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/mens.786bffde68244d6e44db.png",
     "static/media/item-14.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-14.449d8823fa0cebce1857.png",
     "static/media/item-3.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-3.1fb8cfed9fd88a8ecb0d.png",
     "static/media/item-4.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-4.43ca84cd9cef5ccf2f16.png",
@@ -27,7 +26,6 @@
     "static/media/item-6.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-6.6c6155a219a4a9b572e8.png",
     "static/media/product-1.jpeg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/product-1.98358850ded880aa6dc9.jpeg",
     "static/media/item-12.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/item-12.7677193962100aa00c5f.png",
-    "static/media/sun-glass-3.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/sun-glass-3.150dcc74345eedd7b9bc.png",
     "static/media/brand-4.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/brand-4.720c4c2acfced80ba2ff.png",
     "static/media/Site-logo.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/Site-logo.d4d3116adb8aa88182a2.png",
     "static/media/brand-5.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/brand-5.3c4ead34c790cea20775.png",
@@ -37,11 +35,11 @@
     "static/media/product-3.jpeg": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/product-3.1fa8f07b708a307fd3d3.jpeg",
     "static/media/brand-1.png": "/CodeVisionary_Internship_React_OptoNik_Website/static/media/brand-1.182ed63623fd0226e56f.png",
     "index.html": "/CodeVisionary_Internship_React_OptoNik_Website/index.html",
-    "main.312a766f.css.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/css/main.312a766f.css.map",
-    "main.b85792cf.js.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.b85792cf.js.map"
+    "main.0c33fce8.css.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/css/main.0c33fce8.css.map",
+    "main.d05b60ae.js.map": "/CodeVisionary_Internship_React_OptoNik_Website/static/js/main.d05b60ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.312a766f.css",
-    "static/js/main.b85792cf.js"
+    "static/css/main.0c33fce8.css",
+    "static/js/main.d05b60ae.js"
   ]
 }
